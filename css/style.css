@@ -1,9 +1,19 @@
+/* @font-face {
+    font-family: 'IRANYekan';
+    font-style: normal;
+    font-weight: normal;
+    src: url("/Users/narges/Downloads/mahdi's_dad/fonts/b-titr-webfont/BTitr.woff") format('woff');
+    https://fonts.cdnfonts.com/css/IRANYekan
+    } */
+
+/* @import url('https://fonts.cdnfonts.com/css/b-titr'); */
+@import url('https://fonts.cdnfonts.com/css/iranyekan'); 
 
 html,body{
 	padding:0;
 	margin:0;
 	background:#fff;
-font-family: 'Asap Condensed', sans-serif;
+    font-family:'IRANYekan' !important;
 }
 body a{
     transition:0.5s all;
@@ -21,6 +31,125 @@ body a:focus, a:hover {
 	text-decoration: none;
 }
 
+.contact-section {
+    /* background-color: #ffffff; */
+    margin-top: 40px;
+    /* height: 10px; */
+    align-items: flex-end;
+    /* margin: 0 auto; */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: right; /* Ensure RTL alignment */
+    direction: rtl;    /* Right-to-Left direction for Persian text */
+  }
+  
+
+  .spacing-placeholder {
+    height: 20px; /* Adjust height to what `.contact-title` provided */
+  }
+  /* Contact Info Items */
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  /* Icons */
+  .contact-icon {
+    font-size: 17px;
+    color: #006cdc; /* Green accent color */
+    margin-left: 15px;
+  }
+  
+  /* Text Styles */
+  .contact-text {
+    font-size: 17px;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+
+  
+  .contact-item a {
+    color: #006cdc;
+    text-decoration: none;
+  }
+  
+  /* Hover Effect */
+  .contact-item:hover {
+    background-color: #e0f7fa;
+    border-color: #006cdc;
+    box-shadow: 0 4px 12px rgba(0, 150, 136, 0.1);
+  }
+
+
+.card-group {
+  direction: rtl;
+  display: flex;
+  margin-top: 5%;
+  gap: 20px; /* Space between cards */
+  justify-content: space-between;
+  align-items: stretch; /* Ensure equal height cards */
+}
+
+.card {
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  flex: 1; /* Make all cards equal width */
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #006cdc;
+}
+
+.card-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.card-title {
+  font-size: 17px;
+  padding-bottom: 15px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #006adcef;
+  color: #333;
+}
+
+.card-text {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+  line-height: 3rem;
+  text-align: justify;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    transition: 0.3s;
+  }
+
+/* For responsive layout */
+@media (max-width: 768px) {
+  .card-group {
+    flex-direction: column;
+  }
+}
+  
 input[type="button"],input[type="submit"]{
 	transition:0.5s all;
 	-webkit-transition:0.5s all;
@@ -31,14 +160,14 @@ input[type="button"],input[type="submit"]{
 h1,h2,h3,h4,h5,h6{
 	margin:0;	
 	padding:0;
-font-family: 'Asap Condensed', sans-serif;
-	letter-spacing:1px;
+    font-family:'IRANYekan';
+	/* letter-spacing:1px; */
 }	
 p{
 	margin:0;
 	padding:0;
-	letter-spacing:1px;
-font-family: 'Asap Condensed', sans-serif;
+	/* letter-spacing:1px; */
+    font-family:'IRANYekan';
 
 }
 ul{
@@ -55,16 +184,15 @@ ul{
     font-size: 47px;
     text-align: center;
     color:#006cdc;
-    font-weight: 600;
+    /* font-weight: 200; */
 	margin-bottom:30px;
 }
 /*-- header --*/ 
 h1 a.navbar-brand {
     font-size: 56px;
     color: #fff !important ;
-    text-transform: uppercase;
-    font-weight: 300;
-    letter-spacing: 2px;
+    /* font-weight: 300; */
+    /* letter-spacing: 2px; */
 }
 nav.navbar.navbar-default.navbar-fixed-top {
 	position: fixed;
@@ -76,8 +204,8 @@ nav.navbar.navbar-default.navbar-fixed-top {
 	transition:.5s all;
 }
 .navbar-scrolled {
-    background-color: #000000 !important;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    background-color: #1b1e27ec !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.637);
     transition: background-color 0.3s ease;
   }
 nav.navbar.navbar-default.navbar-fixed-top.top-nav-collapse {
@@ -87,9 +215,10 @@ nav.navbar.navbar-default.navbar-fixed-top.top-nav-collapse {
 .navbar-default .navbar-nav > li > a {
     color: #fff;
     font-size: 20px;
-    font-weight: 400;
-    letter-spacing: 1px;
-	    margin: 0 1em;
+    float: left;
+    /* font-weight: 400; */
+    /* letter-spacing: 1px; */
+	margin: 0 1em;
 }
 
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
@@ -125,7 +254,7 @@ nav.navbar.navbar-default.navbar-fixed-top.top-nav-collapse {
 	font-weight:600;
 }
 .info p{font-size: 14px;
-    letter-spacing: 1px;
+    /* letter-spacing: 1px; */
     color: #e6e6e6;
     padding: 0px 19em;
     line-height: 2em;
@@ -136,9 +265,8 @@ nav.navbar.navbar-default.navbar-fixed-top.top-nav-collapse {
     color: #fff;
     font-weight: 600;
     text-decoration: none;
-    text-transform: uppercase;
     display: inline-block;
-    letter-spacing: 2px;
+    /* letter-spacing: 2px; */
     background: #006cdc;
     outline: none;
     padding: 10px 22px;
@@ -155,6 +283,7 @@ nav.navbar.navbar-default.navbar-fixed-top.top-nav-collapse {
     text-align: right;
 }
 .about-grids p {
+    font-family: 'IRANYekan';
     font-size: 1em;
     color: #999;
     line-height: 1.8em;
@@ -170,8 +299,9 @@ nav.navbar.navbar-default.navbar-fixed-top.top-nav-collapse {
 	transition:.5s all;
 }
 .about-grids h4 {
+    font-family: 'IRANYekan';
     color: #000;
-    font-size: 1.2em;
+    /* font-size: 1.2em; */
     text-align: right;
     margin:1.4em 0 .8em;
 	-webkit-transition:.5s all;
@@ -186,13 +316,13 @@ nav.navbar.navbar-default.navbar-fixed-top.top-nav-collapse {
 }  
 .welcome-left {
     padding: 1em 3em 0em;
-	    text-align: center;
+	text-align: center;
+    text-align: justify;
 }
 .welcome-left h2 {
     font-size: 32px;
-    letter-spacing: 4px;
+    /* letter-spacing: 4px; */
     color:#006cdc;
-    text-transform: uppercase;
 	text-align: center;
 }
 .welcome-top{  margin-top: 2em;}
@@ -200,6 +330,7 @@ nav.navbar.navbar-default.navbar-fixed-top.top-nav-collapse {
     font-size: 15px;
     color: #232323;
     line-height: 28px;
+
 }
 .more {
     margin-top: 2em;
@@ -208,11 +339,9 @@ nav.navbar.navbar-default.navbar-fixed-top.top-nav-collapse {
 .more a {
     font-size: 14px;
     color:#006cdc;
-    font-weight: 600;
     text-decoration: none;
-    text-transform: uppercase;
     display: inline-block;
-    letter-spacing: 2px;
+    /* letter-spacing: 2px; */
     background: none;
 	    outline: none;
     padding: 10px 22px;
@@ -228,13 +357,12 @@ nav.navbar.navbar-default.navbar-fixed-top.top-nav-collapse {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
-    min-height: 320px;
+    min-height: 360px;
 }
   .modal-header {
     text-align: center;
     font-size: 32px;
-    text-transform: uppercase;
-    letter-spacing: 4px;
+    /* letter-spacing: 4px; */
     color: #2ebaef;
 } 
 .modal-body p {
@@ -242,7 +370,7 @@ nav.navbar.navbar-default.navbar-fixed-top.top-nav-collapse {
     color: #777;
     line-height: 26px;
     padding: 15px 8px; 
-	letter-spacing: 2px;
+	/* letter-spacing: 2px; */
 }
 /*--//about--*/
 /*--service--*/
@@ -327,7 +455,7 @@ nav.navbar.navbar-default.navbar-fixed-top.top-nav-collapse {
 .services-icon-info p{   
     color: #a29c9c;
     font-size: 14px;
-    letter-spacing: 2px;
+    /* letter-spacing: 2px; */
 }
 .services-right-grids:nth-child(2){
 	margin:2em 0;
@@ -345,7 +473,7 @@ nav.navbar.navbar-default.navbar-fixed-top.top-nav-collapse {
     font-size:26px;
     color: #000;
     text-align: center;
-	letter-spacing:1px;
+	/* letter-spacing:1px; */
     margin:1em 0;
 }
 
@@ -441,7 +569,7 @@ h2.resp-accordion {
     color: #fff;
     line-height: 2em;
     margin-bottom: 1em;
-	text-align:left;
+	text-align:right;
 	font-size:14px;
 }
 .w3_agile_testimonials_grid_right {
@@ -487,9 +615,8 @@ h2.resp-accordion {
 .w3_agile_testimonials_grid_right h4 {
     font-size: 20px;
     color: #000;
-    text-transform: uppercase;
-    font-weight: 600;
-    letter-spacing: 2px;
+    text-align: left;
+    /* letter-spacing: 2px; */
 }
 .w3_agile_testimonials_grid_right h5{
 	font-size:14px;
@@ -565,13 +692,16 @@ span.w3-line {
 span.black{ background:#000;}
 .port {
     font-size: 14px;
-    letter-spacing: 1px;
+    /* letter-spacing: 1px; */
     color: #000;
     padding: 0px 19em;
     line-height: 2em;
     text-align: center;
 }
-.ser-info{color:#fff;}
+.ser-info{
+    color:#fff;
+    text-align: justify;
+}
 /*-- //testimonials --*/
 /*-- contact--*/
 .styled-input.agile-styled-input-top {
@@ -587,7 +717,7 @@ span.black{ background:#000;}
     width: 100%;
     background:rgba(206, 206, 206, 0.2);
 	outline: none;
-	letter-spacing:1px
+	/* letter-spacing:1px */
 }
 .contact input[type="text"]:hover,.contact input[type="email"]:hover,.contact textarea:hover{ border-bottom: 2px solid #006cdc;}
 ::-webkit-input-placeholder { /* Chrome */
@@ -646,7 +776,7 @@ span.black{ background:#000;}
     color: #fff;
     font-size: 16px;
     font-weight: 700;
-    letter-spacing: 1px;
+    /* letter-spacing: 1px; */
     text-decoration: none;
     border: solid 2px #fff;
     padding: .7em 3em;
@@ -687,7 +817,7 @@ footer p {
     font-size: 16px;
     color: #fff;
 	text-align: center;
-	letter-spacing:2px;
+	/* letter-spacing:2px; */
 }
 .copywrite{padding:1em 0;}
 .icons {
@@ -715,7 +845,7 @@ ul {
 }
 .footer span {
     color: #fff;
-    letter-spacing: 11.4px;
+    /* letter-spacing: 11.4px; */
 }
 
 footer p a{color:#fff;
@@ -740,9 +870,8 @@ h2{text-align:center;
 h2 a.brand {
     font-size: 56px;
     color: #006cdc;
-    text-transform: uppercase;
     font-weight: 300;
-    letter-spacing: 2px;
+    /* letter-spacing: 2px; */
 }
 /*--//footer--*/
 /*-- bottom-to-top --*/
@@ -750,7 +879,7 @@ h2 a.brand {
 	display: none;
 	text-decoration: none;
 	position: fixed;
-	bottom: 24px;
+	bottom: 10px;
 	right: 1%;
 	overflow: hidden;
 	z-index: 999; 
@@ -804,7 +933,7 @@ h2 a.brand {
 }
 .services-icon-info p {
  
-    letter-spacing: 1px;
+    /* letter-spacing: 1px; */
 }
 .nbs-flexisel-nav-right {
     right: 17%;
