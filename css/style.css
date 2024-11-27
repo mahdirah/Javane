@@ -31,6 +31,20 @@ body a:focus, a:hover {
 	text-decoration: none;
 }
 
+.services-right-grid img {
+    width: 400px; /* Ensure the image takes up full width */
+    height: 200px; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners on the image */
+    transition: transform 0.3s ease; /* Smooth zoom effect on hover */
+    margin-right: 20%;
+    border: 2px solid #006adce6;;
+}
+
+/* Hover effect for the image */
+.services-right-grid:hover img {
+    transform: scale(1.05); /* Zoom effect on hover */
+}
+
 .contact-section {
     /* background-color: #ffffff; */
     margin-top: 40px;
@@ -284,12 +298,34 @@ nav.navbar.navbar-default.navbar-fixed-top.top-nav-collapse {
 }
 .about-grids p {
     font-family: 'IRANYekan';
+    max-height: 60px;
+    overflow: hidden;
     font-size: 1em;
     color: #999;
-    line-height: 1.8em;
+    line-height: 2em;
     padding-right:2em;
     border-right: 2px solid #000;
+    transition: max-height 0.3s ease;
+    text-align: justify;
 
+}
+
+.read-more-btn {
+    display: none; /* Initially hidden */
+    color: #007BFF; /* Link color */
+    cursor: pointer; /* Make it look clickable */
+    font-size: 1em;
+    background: none;
+    border: none;
+    padding: 0;
+    margin-top: 10px;
+}
+.read-more-btn:hover {
+    color: #0056b3; /* Darker blue on hover */
+    text-decoration: none; /* Remove underline on hover */
+}
+.about-text.expanded {
+    max-height: none; /* Remove height limit */
 }
 .about-grids span.fa {
     font-size: 2.5em;
@@ -956,6 +992,7 @@ h2 a.brand {
 }
 .about-grids p {
     padding-left: 1em;
+    max-height:60px
 }
 }
 @media(max-width:991px){
@@ -1175,7 +1212,7 @@ h1 a.navbar-brand {
     padding: 0em 1em;
 }
 .about-grids {
-    padding: 0 20px;
+    padding: 0 10px;
 }
 .about, .services, .portfolio, .content, .testimonials {
     padding: 3em 0;
@@ -1226,7 +1263,12 @@ h2 a.brand {
 h1 a.navbar-brand {
     font-size: 40px;
 }
+.about-grids {
+
+    width: 100%;
 }
+}
+
 @media(max-width:414px){
 .info h4 {
     font-size: 33px;

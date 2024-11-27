@@ -1593,17 +1593,17 @@ pre code {
 }
 @media (min-width: 768px) {
   .container {
-    width: 750px;
+    width: 100%;
   }
 }
 @media (min-width: 992px) {
   .container {
-    width: 970px;
+    width: 90%;
   }
 }
 @media (min-width: 1200px) {
   .container {
-    width: 1170px;
+    width: 90%;
   }
 }
 .container-fluid {
@@ -1780,7 +1780,7 @@ pre code {
 }
 @media (min-width: 768px) {
   .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
-    float: left;
+    float: right;
   }
   .col-sm-12 {
     width: 100%;
@@ -1810,7 +1810,8 @@ pre code {
     width: 33.33333333%;
   }
   .col-sm-3 {
-    width: 25%;
+    width: 50%;
+    padding-top: 5%;
   }
   .col-sm-2 {
     width: 16.66666667%;
@@ -1970,6 +1971,9 @@ pre code {
   .col-md-4 {
     width: 33.33333333%;
   }
+  .about .col-md-3 {
+    width: 20%;
+  }
   .col-md-3 {
     width: 25%;
   }
@@ -2099,7 +2103,7 @@ pre code {
 }
 @media (min-width: 1200px) {
   .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
-    float: left;
+    float: right;
   }
   .col-lg-12 {
     width: 100%;
@@ -2450,7 +2454,9 @@ table th[class*="col-"] {
   min-height: .01%;
   overflow-x: auto;
 }
+
 @media screen and (max-width: 767px) {
+
   .table-responsive {
     width: 100%;
     margin-bottom: 15px;
