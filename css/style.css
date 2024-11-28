@@ -812,7 +812,7 @@ span.black{ background:#000;}
  .content{
     display: flex;
     flex-direction: column;
-    background: url(../images/ct1.jpg)no-repeat center;
+/*     background: url(../images/ct1.jpg)no-repeat center; */
     background-size: cover;
 
  }
