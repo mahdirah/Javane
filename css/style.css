@@ -32,7 +32,7 @@ body a:focus, a:hover {
 }
 
 .services-right-grid img {
-    width: 525px; /* Ensure the image takes up full width */
+    width: 500px; /* Ensure the image takes up full width */
     height: 300px; /* Maintain aspect ratio */
     /* border-radius: 0px; */
     transition: transform 0.3s ease; /* Smooth zoom effect on hover */
@@ -86,7 +86,7 @@ body a:focus, a:hover {
   /* Icons */
   .contact-icon {
     font-size: 17px;
-    color: #006cdc; /* Green accent color */
+    color: #008080; /* Green accent color */
     margin-left: 15px;
   }
   
@@ -100,14 +100,14 @@ body a:focus, a:hover {
 
   
   .contact-item a {
-    color: #006cdc;
+    color: #008080;
     text-decoration: none;
   }
   
   /* Hover Effect */
   .contact-item:hover {
     background-color: #e0f7fa;
-    border-color: #006cdc;
+    border-color: #008080;
     box-shadow: 0 4px 12px rgba(0, 150, 136, 0.1);
   }
 
@@ -129,7 +129,7 @@ body a:focus, a:hover {
   flex: 1; /* Make all cards equal width */
   display: flex;
   flex-direction: column;
-  border: 1px solid #006cdc;
+  border: 1px solid #008080;
 }
 
 .card-body {
@@ -144,7 +144,7 @@ body a:focus, a:hover {
   font-size: 17px;
   padding-bottom: 15px;
   margin-bottom: 10px;
-  border-bottom: 1px solid #006adcef;
+  border-bottom: 1px solid #008080eb;
   color: #333;
 }
 
@@ -214,7 +214,7 @@ ul{
 .title {
     font-size: 47px;
     text-align: center;
-    color:#006cdc;
+    color:#008080;
     /* font-weight: 200; */
 	margin-bottom:30px;
 }
@@ -255,7 +255,7 @@ nav.navbar.navbar-default.navbar-fixed-top.top-nav-collapse {
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
        border-top: 1px solid #fff;
 	    border-bottom: 1px solid #fff;
-	color: #006cdc;
+	color: #008080;
     background-color: transparent;
 }
 .nav > li > a {
@@ -275,6 +275,8 @@ nav.navbar.navbar-default.navbar-fixed-top.top-nav-collapse {
     background-size: cover;
     min-height: 800px;
 	position: relative;
+    margin-top: 85px;
+
 }
 .info {
     margin-top: 24em;
@@ -299,14 +301,14 @@ nav.navbar.navbar-default.navbar-fixed-top.top-nav-collapse {
     text-decoration: none;
     display: inline-block;
     /* letter-spacing: 2px; */
-    background: #006cdc;
+    background: #008080;
     outline: none;
     padding: 10px 22px;
     border: 2px solid #fff;
 }
 .more-buttn a:hover {
-    background: #006cdc;
-    border: 2px solid #006cdc;
+    background: #008080;
+    border: 2px solid #008080;
     color: #fff;
 }
 /*-- //banner --*/ 
@@ -330,7 +332,7 @@ nav.navbar.navbar-default.navbar-fixed-top.top-nav-collapse {
 
 .read-more-btn {
     display: none; /* Initially hidden */
-    color: #007BFF; /* Link color */
+    color: #008080; /* Link color */
     cursor: pointer; /* Make it look clickable */
     font-size: 1em;
     background: none;
@@ -339,7 +341,7 @@ nav.navbar.navbar-default.navbar-fixed-top.top-nav-collapse {
     margin-top: 10px;
 }
 .read-more-btn:hover {
-    color: #0056b3; /* Darker blue on hover */
+    color: #008080ef; /* Darker blue on hover */
     text-decoration: none; /* Remove underline on hover */
 }
 .about-text.expanded {
@@ -363,10 +365,10 @@ nav.navbar.navbar-default.navbar-fixed-top.top-nav-collapse {
 	transition:.5s all;
 } 
 .about-grids:hover span.fa {
-    color:#006cdc;
+    color:#008080;
 }
 .about-grids:hover h4 {
-    color: #006cdc;
+    color: #008080;
 }  
 .welcome-left {
     padding: 1em 3em 0em;
@@ -376,7 +378,7 @@ nav.navbar.navbar-default.navbar-fixed-top.top-nav-collapse {
 .welcome-left h2 {
     font-size: 32px;
     /* letter-spacing: 4px; */
-    color:#006cdc;
+    color:#008080;
 	text-align: center;
 }
 .welcome-top{  margin-top: 2em;}
@@ -392,18 +394,18 @@ nav.navbar.navbar-default.navbar-fixed-top.top-nav-collapse {
 }
 .more a {
     font-size: 14px;
-    color:#006cdc;
+    color:#008080;
     text-decoration: none;
     display: inline-block;
     /* letter-spacing: 2px; */
     background: none;
 	    outline: none;
     padding: 10px 22px;
-    border: 2px solid#006cdc;
+    border: 2px solid#008080;
 }
 .more a:hover {
-    background:#006cdc;
-    border: 2px solid#006cdc;
+    background:#008080;
+    border: 2px solid#008080;
     color: #fff;
 }
 .welcome-right {
@@ -436,7 +438,7 @@ nav.navbar.navbar-default.navbar-fixed-top.top-nav-collapse {
 }
 
 .services-right-grid span.fa{
-    color: #006cdc;
+    color: #008080;
     font-size: 2em;
 	
 }
@@ -460,7 +462,7 @@ nav.navbar.navbar-default.navbar-fixed-top.top-nav-collapse {
   -moz-osx-font-smoothing: grayscale;
   position: relative;
   overflow: hidden;
-  background: #006cdc;
+  background: #008080;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 0.3s;
@@ -576,7 +578,7 @@ nav.navbar.navbar-default.navbar-fixed-top.top-nav-collapse {
 }
 .resp-tab-active, .resp-tab-item:hover {
     text-shadow: none;
-    background:#006cdc;
+    background:#008080;
         color:#fff;
 }
 .resp-tabs-container {
@@ -634,7 +636,7 @@ h2.resp-accordion {
     float: left;
     width: 70%;
     padding: 1em 2em;
-    background:#006cdc;
+    background:#008080;
 	position:relative;
 }
 .test-tooltip:before {
@@ -644,7 +646,7 @@ h2.resp-accordion {
 	top: 38%;
 	border-left: 10px solid transparent;
 	border-right: 10px solid transparent;
-	border-bottom: 14px solid#006cdc;
+	border-bottom: 14px solid#008080;
 	transform: rotate(-90deg);
 	-webkit-transform: rotate(-90deg);
 	-moz-transform: rotate(-90deg);
@@ -658,7 +660,7 @@ h2.resp-accordion {
 	top: 38%;
 	border-left: 10px solid transparent;
 	border-right: 10px solid transparent;
-	border-bottom: 14px solid#006cdc;
+	border-bottom: 14px solid#008080;
 	transform: rotate(90deg);
 	-webkit-transform: rotate(90deg);
 	-moz-transform: rotate(90deg);
@@ -757,7 +759,7 @@ span.black{ background:#000;}
 }
 .ser-info{
     color:#fff;
-    text-align: justify;
+    /* text-align: justify; */
 }
 /*-- //testimonials --*/
 /*-- contact--*/
@@ -776,7 +778,7 @@ span.black{ background:#000;}
 	outline: none;
 	/* letter-spacing:1px */
 }
-.contact input[type="text"]:hover,.contact input[type="email"]:hover,.contact textarea:hover{ border-bottom: 2px solid #006cdc;}
+.contact input[type="text"]:hover,.contact input[type="email"]:hover,.contact textarea:hover{ border-bottom: 2px solid #008080;}
 ::-webkit-input-placeholder { /* Chrome */
   color: #fff;
 }
@@ -841,7 +843,7 @@ span.black{ background:#000;}
     border: solid 2px #fff;
     padding: .7em 3em;
     outline: 0;
-	background:#006cdc;
+	background:#008080;
 	display:inline-block;
     transition: 0.5s all;
     -webkit-transition: 0.5s all;
@@ -888,7 +890,7 @@ span.black{ background:#000;}
     width: 100%;
     padding: 1em;
     border: none;
-    border-bottom: 2px solid #006cdc;
+    border-bottom: 2px solid #008080;
     /* border-radius: 4px; */
     font-size: 1em;
     background-color: #acabab36;  
@@ -903,14 +905,14 @@ span.black{ background:#000;}
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-    border-color: #007BFF;
+    border-color: #008080ef;
     outline: none;
 }
 
 .contact-form button {
     padding: 0.7em 1.5em;
     width: 100%;
-    background-color: #007BFF;
+    background-color: #008080f4;
     color: white;
     border: none;
     border-radius: 4px;
@@ -921,7 +923,7 @@ span.black{ background:#000;}
 }
 
 .contact-form button:hover {
-    background-color: #0056b3;
+    background-color: #027070;
 }
 
 /* Responsive adjustments */
@@ -1012,7 +1014,7 @@ h2{text-align:center;
    margin:0.5em 0;}
 h2 a.brand {
     font-size: 56px;
-    color: #006cdc;
+    color: #008080;
     font-weight: 300;
     /* letter-spacing: 2px; */
 }
@@ -1194,13 +1196,13 @@ span.line {
 .about-top{margin-top:1.5em;}
 
 .navbar-default .navbar-toggle {
-    border:2px solid #006cdc;
+    border:2px solid #008080;
 }
 .navbar-default .navbar-toggle .icon-bar {
     background-color: #fbf8f8;
 }
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-    background-color: #006cdc;
+    background-color: #008080;
 }
 
 .service-top{
@@ -1448,7 +1450,7 @@ footer p {
     min-height: 242px;
 }
 span.fa.fa-thumbs-up, span.fa.fa-comment, span.fa.fa-heartbeat, span.fa.fa-car {
-    color: #006cdc;
+    color: #008080;
     font-size: 1.5em;
 }
 .modal-body {
