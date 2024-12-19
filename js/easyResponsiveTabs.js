@@ -59,10 +59,10 @@
                     $tabItem.attr('aria-controls', 'tab_item-' + (count));
                     $tabItem.attr('role', 'tab');
 
-                    // Set the last tab as active
-                    $respTabs.find('.resp-tab-item').last().addClass('resp-tab-active');
-                    $respTabs.find('.resp-accordion').last().addClass('resp-tab-active');
-                    $respTabs.find('.resp-tab-content').last().addClass('resp-tab-content-active').attr('style', 'display:block');
+                    //First active tab                   
+                    $respTabs.find('.resp-tab-item').first().addClass('resp-tab-active');
+                    $respTabs.find('.resp-accordion').first().addClass('resp-tab-active');
+                    $respTabs.find('.resp-tab-content').first().addClass('resp-tab-content-active').attr('style', 'display:block');
 
                     //Assigning the 'aria-labelledby' attr to tab-content
                     var tabcount = 0;
